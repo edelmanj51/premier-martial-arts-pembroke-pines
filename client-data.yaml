@@ -46,7 +46,7 @@ INSTRUCTOR_2_BIO: "Mr. Asesor is the owner of Premier Martial Arts Pines, bringi
 PROGRAM_1_NAME: "Tiny Champs"
 PROGRAM_1_PHOTO: images/programs/program-1/main.webp
 PROGRAM_1_AGE_RANGE: "Ages 3–4"
-PROGRAM_1_DAYS: "Multiple times weekly"
+PROGRAM_1_DAYS: "Mon, Tue, Wed, Fri & Sat"
 PROGRAM_1_SESSION_LEN: "30-min classes"
 PROGRAM_1_DESCRIPTION: "Tiny Champs is our beginner martial arts program designed specifically for 3–4-year-olds. Using fun, safe, and engaging play-based training, our expert instructors teach foundational skills including discipline, coordination, respect, confidence, and basic self-defense. The perfect introduction to martial arts for your little one."
 PROGRAM_1_AUDIENCE_KIDS: "1"
@@ -54,7 +54,7 @@ PROGRAM_1_AUDIENCE_KIDS: "1"
 PROGRAM_2_NAME: "Little Champions"
 PROGRAM_2_PHOTO: images/programs/program-2/main.webp
 PROGRAM_2_AGE_RANGE: "Ages 5–7"
-PROGRAM_2_DAYS: "Multiple times weekly"
+PROGRAM_2_DAYS: "Mon–Sat"
 PROGRAM_2_SESSION_LEN: "45-min classes"
 PROGRAM_2_DESCRIPTION: "Our Little Champions program helps your child develop far beyond the mat. Students gain the physical benefits of martial arts training while building the life skills that matter most — discipline, confidence, focus, and leadership. Instructors create a positive, encouraging environment where every child thrives."
 PROGRAM_2_AUDIENCE_KIDS: "1"
@@ -62,7 +62,7 @@ PROGRAM_2_AUDIENCE_KIDS: "1"
 PROGRAM_3_NAME: "PMA Kids"
 PROGRAM_3_PHOTO: images/programs/program-3/main.webp
 PROGRAM_3_AGE_RANGE: "Ages 8–12"
-PROGRAM_3_DAYS: "Multiple times weekly"
+PROGRAM_3_DAYS: "Mon–Sat"
 PROGRAM_3_SESSION_LEN: "45-min classes"
 PROGRAM_3_DESCRIPTION: "PMA Kids takes martial arts training to the next level for older children. Students develop discipline, confidence, focus, and leadership through challenging, age-appropriate instruction. We go beyond physical technique — building character and strong values that stay with students for life."
 PROGRAM_3_AUDIENCE_KIDS: "1"
@@ -70,7 +70,7 @@ PROGRAM_3_AUDIENCE_KIDS: "1"
 PROGRAM_4_NAME: "Teens Martial Arts"
 PROGRAM_4_PHOTO: images/programs/program-4/main.webp
 PROGRAM_4_AGE_RANGE: "Ages 13–17"
-PROGRAM_4_DAYS: "Multiple times weekly"
+PROGRAM_4_DAYS: "Mon, Tue & Thu"
 PROGRAM_4_SESSION_LEN: "60-min classes"
 PROGRAM_4_DESCRIPTION: "Our teens program is a high-energy, supportive training environment designed to help teenagers build real strength, confidence, discipline, and self-defense skills. Designed specifically for teenagers, it channels energy positively and builds the mental toughness and resilience they need to excel in school, sports, and life."
 PROGRAM_4_AUDIENCE_TEENS: "1"
@@ -78,10 +78,66 @@ PROGRAM_4_AUDIENCE_TEENS: "1"
 PROGRAM_5_NAME: "Adult Martial Arts"
 PROGRAM_5_PHOTO: images/programs/program-5/main.webp
 PROGRAM_5_AGE_RANGE: "Ages 18+"
-PROGRAM_5_DAYS: "Multiple times weekly"
+PROGRAM_5_DAYS: "Mon–Thu"
 PROGRAM_5_SESSION_LEN: "60-min classes"
 PROGRAM_5_DESCRIPTION: "Our adult program is based on Krav Maga and Kickboxing, offering a full-body workout with practical self-defense skills. Whether your goal is fitness, stress relief, or real-world self-defense, our certified instructors will push you to your full potential in a supportive, welcoming environment."
 PROGRAM_5_AUDIENCE_ADULTS: "1"
+
+# Source: extracted schedule for Premier Martial Arts – Pembroke Pines. End times
+# marked "unclear/not shown" in the source were left as single start times rather
+# than guessing a duration — do not infer end times from PROGRAM_N_SESSION_LEN.
+CLASS_SCHEDULE_HTML: |
+  <table class="sched" role="table" aria-label="Weekly class schedule">
+    <colgroup><col style="width:30%"><col style="width:11.7%"><col style="width:11.7%"><col style="width:11.7%"><col style="width:11.7%"><col style="width:11.7%"><col style="width:11.7%"></colgroup>
+    <thead><tr><th scope="col">Program</th><th scope="col">Monday</th><th scope="col">Tuesday</th><th scope="col">Wednesday</th><th scope="col">Thursday</th><th scope="col">Friday</th><th scope="col">Saturday</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Tiny Champs<br><small style="color:#64748b">Ages 3–4 &middot; 30 min</small></td>
+        <td><span class="time-slot kids">5:00–5:30 PM</span></td>
+        <td><span class="time-slot kids">5:00–5:30 PM</span></td>
+        <td><span class="time-slot kids">4:30–5:00 PM</span></td>
+        <td><span class="time-empty">—</span></td>
+        <td><span class="time-slot kids">4:00–4:30 PM</span></td>
+        <td><span class="time-slot kids">9:30–10:00 AM</span></td>
+      </tr>
+      <tr>
+        <td>Little Champions<br><small style="color:#64748b">Ages 5–7 &middot; 45 min</small></td>
+        <td><span class="time-slot kids">5:30 PM</span></td>
+        <td><span class="time-slot kids">5:30 PM</span><br><span class="time-slot kids">6:30 PM</span></td>
+        <td><span class="time-slot kids">5:00 PM</span></td>
+        <td><span class="time-slot kids">5:30 PM</span><br><span class="time-slot kids">6:30 PM</span></td>
+        <td><span class="time-slot kids">4:30 PM</span></td>
+        <td><span class="time-slot kids">10:00 AM</span></td>
+      </tr>
+      <tr>
+        <td>PMA Kids<br><small style="color:#64748b">Ages 8–12 &middot; 45 min</small></td>
+        <td><span class="time-slot kids">4:00 PM</span><br><span class="time-slot kids">6:30 PM</span></td>
+        <td><span class="time-slot kids">4:00 PM</span></td>
+        <td><span class="time-slot kids">6:00 PM</span></td>
+        <td><span class="time-slot kids">4:00 PM</span><br><span class="time-slot kids">5:00 PM</span></td>
+        <td><span class="time-slot kids">5:30 PM</span></td>
+        <td><span class="time-slot kids">11:30 AM</span></td>
+      </tr>
+      <tr>
+        <td>Teens Martial Arts<br><small style="color:#64748b">Ages 13–17 &middot; 60 min</small></td>
+        <td><span class="time-slot teens">7:00–8:00 PM</span></td>
+        <td><span class="time-slot teens">6:00–7:00 PM</span></td>
+        <td><span class="time-empty">—</span></td>
+        <td><span class="time-slot teens">6:00–7:00 PM</span><br><span class="time-slot teens">7:00–8:00 PM</span></td>
+        <td><span class="time-empty">—</span></td>
+        <td><span class="time-empty">—</span></td>
+      </tr>
+      <tr>
+        <td>Adult Martial Arts<br><small style="color:#64748b">Ages 18+ &middot; 60 min</small></td>
+        <td><span class="time-slot adult">7:00–8:00 PM</span></td>
+        <td><span class="time-slot adult">7:00–8:00 PM</span></td>
+        <td><span class="time-slot adult">7:00–8:00 PM</span></td>
+        <td><span class="time-slot adult">7:00–8:00 PM</span></td>
+        <td><span class="time-empty">—</span></td>
+        <td><span class="time-empty">—</span></td>
+      </tr>
+    </tbody>
+  </table>
 
 REVIEWER_1_NAME: "Guillermo Lopez"
 REVIEWER_1_DATE: "2 months ago"

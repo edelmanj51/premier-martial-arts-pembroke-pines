@@ -300,7 +300,7 @@
     <div id="modal-trial-body">
       <h2 class="modal-title" id="title-trial">Book Your Free Trial Today</h2>
       <p class="modal-sub">No commitment. No experience needed. Just show up and try it free.</p>
-      <form class="modal-form" onsubmit="submitModal(event,'modal-trial','https://PLACEHOLDER-replace-before-launch')">
+      <form class="modal-form" onsubmit="submitModal(event,'modal-trial','https://services.leadconnectorhq.com/hooks/yjMK5l93LwtVP7JTmcHO/webhook-trigger/OWN63V0FkzKMhcvOAA7w')">
         <div class="field"><input type="text" name="first_name" placeholder="First Name" required autocomplete="given-name"></div>
         <div class="field"><input type="text" name="last_name" placeholder="Last Name" required autocomplete="family-name"></div>
         <div class="field"><label for="tr-email">Email</label><input id="tr-email" type="email" name="email" placeholder="your@email.com" required autocomplete="email"></div>
@@ -321,7 +321,7 @@
     <div id="modal-kit-body">
       <h2 class="modal-title" id="title-kit">Looking For Our Pricing?</h2>
       <p class="modal-sub">Fill out the form below and one of our coaches will send you our pricing, class schedule, and EXCLUSIVE promo information for our classes.</p>
-      <form class="modal-form" onsubmit="submitModal(event,'modal-kit','https://PLACEHOLDER-replace-before-launch')">
+      <form class="modal-form" onsubmit="submitModal(event,'modal-kit','https://services.leadconnectorhq.com/hooks/yjMK5l93LwtVP7JTmcHO/webhook-trigger/OWN63V0FkzKMhcvOAA7w')">
         <div class="field"><input type="text" name="first_name" placeholder="First Name" required autocomplete="given-name"></div>
         <div class="field"><input type="text" name="last_name" placeholder="Last Name" required autocomplete="family-name"></div>
         <div class="field"><label for="kit-email">Email</label><input id="kit-email" type="email" name="email" placeholder="your@email.com" required autocomplete="email"></div>
@@ -362,7 +362,7 @@
     e.preventDefault();var form=e.target,data={};new FormData(form).forEach(function(v,k){data[k]=v});
     var btn=form.querySelector('[type=submit]');btn.textContent='Sending…';btn.disabled=true;
     if(url&&url.charAt(0)!=='[')fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)}).catch(function(){});
-    setTimeout(function(){if(mid==='modal-trial'){window.location.href='https://PLACEHOLDER-replace-before-launch';}else{var b=document.getElementById(mid+'-body'),s=document.getElementById(mid+'-success');if(b)b.style.display='none';if(s)s.style.display='block';}},550);
+    setTimeout(function(){if(mid==='modal-trial'){window.location.href='https://api.leadconnectorhq.com/widget/group/zaV8nI8DkE2fknZTApVT';}else{var b=document.getElementById(mid+'-body'),s=document.getElementById(mid+'-success');if(b)b.style.display='none';if(s)s.style.display='block';}},550);
   };
 }());
 </script>

@@ -601,7 +601,7 @@
     <div id="modal-trial-body">
       <h2 class="modal-title" id="title-trial">Book Your Free Trial Today</h2>
       <p class="modal-sub">No commitment. No experience needed. Just show up and try it free.</p>
-      <form class="modal-form" onsubmit="submitModal(event,'modal-trial','https://PLACEHOLDER-replace-before-launch')">
+      <form class="modal-form" onsubmit="submitModal(event,'modal-trial','https://services.leadconnectorhq.com/hooks/yjMK5l93LwtVP7JTmcHO/webhook-trigger/OWN63V0FkzKMhcvOAA7w')">
         <div class="field"><input type="text" name="first_name" placeholder="First Name" required autocomplete="given-name"></div>
         <div class="field"><input type="text" name="last_name" placeholder="Last Name" required autocomplete="family-name"></div>
         <div class="field"><label for="tr-email">Email</label><input id="tr-email" type="email" name="email" placeholder="your@email.com" required autocomplete="email"></div>
@@ -622,7 +622,7 @@
     <div id="modal-kit-body">
       <h2 class="modal-title" id="title-kit">Get Pricing + Schedule</h2>
       <p class="modal-sub">We'll send you our full program guide, pricing, and weekly schedule.</p>
-      <form class="modal-form" onsubmit="submitModal(event,'modal-kit','https://PLACEHOLDER-replace-before-launch')">
+      <form class="modal-form" onsubmit="submitModal(event,'modal-kit','https://services.leadconnectorhq.com/hooks/yjMK5l93LwtVP7JTmcHO/webhook-trigger/OWN63V0FkzKMhcvOAA7w')">
         <div class="field"><input type="text" name="first_name" placeholder="First Name" required autocomplete="given-name"></div>
         <div class="field"><input type="text" name="last_name" placeholder="Last Name" required autocomplete="family-name"></div>
         <div class="field"><label for="kit-email">Email</label><input id="kit-email" type="email" name="email" placeholder="your@email.com" required autocomplete="email"></div>
@@ -708,7 +708,7 @@
       <div class="quiz-progress"><div class="quiz-bar" style="width:100%"></div></div>
       <h2 class="modal-title">Almost There!</h2>
       <p class="modal-sub">We found the perfect program for you. Enter your info and we'll send your personalized recommendation.</p>
-      <form class="modal-form" id="form-quiz" onsubmit="submitModal(event,'modal-quiz','https://PLACEHOLDER-replace-before-launch')">
+      <form class="modal-form" id="form-quiz" onsubmit="submitModal(event,'modal-quiz','https://services.leadconnectorhq.com/hooks/yjMK5l93LwtVP7JTmcHO/webhook-trigger/OWN63V0FkzKMhcvOAA7w')">
         <input type="hidden" name="quizAnswers" id="quiz-answers">
         <div class="field"><input type="text" name="first_name" placeholder="First Name" required autocomplete="given-name"></div>
         <div class="field"><input type="text" name="last_name" placeholder="Last Name" required autocomplete="family-name"></div>
@@ -762,7 +762,7 @@
         document.querySelectorAll('#modal-quiz .quiz-step').forEach(function(s){s.classList.remove('active')});
         document.getElementById('qz-success').classList.add('active');
       } else if(mid==='modal-trial'){
-        window.location.href='https://PLACEHOLDER-replace-before-launch';
+        window.location.href='https://api.leadconnectorhq.com/widget/group/zaV8nI8DkE2fknZTApVT';
       } else {
         var b=document.getElementById(mid+'-body'),s=document.getElementById(mid+'-success');
         if(b)b.style.display='none';if(s)s.style.display='block';
